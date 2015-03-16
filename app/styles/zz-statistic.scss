@@ -1,0 +1,128 @@
+// app/templates/styles/zz-statistic.scss
+
+// Defaults
+$zzStatisticFontFamily: Lato;
+$zzStatisticFontWeight: 400 !default;
+$zzStatisticLineHeight: 1em !default;
+$zzStatisticMiniValueFontSize: 1.5rem !default;
+$zzStatisticMiniLabelFontSize: 1.25rem !default;
+$zzStatisticTinyValueFontSize: 2rem !default;
+$zzStatisticTinyLabelFontSize: 1.5rem !default;
+$zzStatisticSmallValueFontSize: 3rem !default;
+$zzStatisticSmallLabelFontSize: 1.5rem !default;
+$zzStatisticValueFontSize: 3.5rem !default;
+$zzStatisticLabelFontSize: 1.75rem !default;
+$zzStatisticLargeValueFontSize: 4rem !default;
+$zzStatisticLargeLabelFontSize: 2rem !default;
+$zzStatisticHugeValueFontSize: 5rem !default;
+$zzStatisticHugeLabelFontSize: 2.5rem !default;
+$zzStatisticGiantValueFontSize: 6rem !default;
+$zzStatisticGiantLabelFontSize: 3rem !default;
+$zzStatisticImmenseValueFontSize: 7rem !default;
+$zzStatisticImmenseLabelFontSize: 3.5rem !default;
+$zzStatisticMaxWidth: 300px !default;
+$zzStatisticValueColor: #1d1d1d !default;
+$zzStatisticLabelColor: #bfbfbf !default;
+$zzStatisticBackgroundColor: #ffffff !default;
+
+.zz-statistic {
+	display: block;
+	float: left;
+	margin: 0 1em 2em;
+	max-width: $zzStatisticMaxWidth;
+	background-color: $zzStatisticBackgroundColor; 
+}
+
+.zz-statistic>.value {
+	display: inline-block;
+	vertical-align: middle;
+	font-family: $zzStatisticFontFamily,'Helvetica Neue',Arial,Helvetica,sans-serif;
+	font-weight: $zzStatisticFontWeight;
+	line-height: $zzStatisticLineHeight;
+	color: $zzStatisticValueColor;
+	text-transform: uppercase;
+	text-align: center;	
+}
+
+.zz-statistic>.value~.label {
+	margin-top: .25rem;
+}
+
+.zz-statistic>.label {
+	display: block;
+	font-weight: $zzStatisticFontWeight;
+	color: $zzStatisticLabelColor;
+	text-transform: none;
+	text-align: center;
+}
+	
+.zz-statistic>.value .icon {
+	display: inline-block;
+	opacity: 1;
+	width: auto;
+	margin: 0;
+}
+
+.mini.zz-statistic>.value {
+	font-size: $zzStatisticMiniValueFontSize;
+}
+
+.mini.zz-statistic>.label {
+	font-size: $zzStatisticMiniLabelFontSize;
+}
+
+.tiny.zz-statistic>.value {
+	font-size: $zzStatisticTinyValueFontSize;
+}
+
+.tiny.zz-statistic>.label {
+	font-size: $zzStatisticTinyLabelFontSize;
+}
+
+.small.zz-statistic>.value {
+	font-size: $zzStatisticSmallValueFontSize;
+}
+
+.small.zz-statistic>.label {
+	font-size: $zzStatisticSmallLabelFontSize;
+}
+
+.zz-statistic>.value {
+	font-size: $zzStatisticValueFontSize;
+}
+
+.zz-statistic>.label {
+	font-size: $zzStatisticLabelFontSize;
+}
+
+.large.zz-statistic>.value {
+	font-size: $zzStatisticLargeValueFontSize;
+}
+
+.large.zz-statistic>.label {
+	font-size: $zzStatisticLargeLabelFontSize;
+}
+
+.huge.zz-statistic>.value {
+	font-size: $zzStatisticHugeValueFontSize;
+}
+
+.huge.zz-statistic>.label {
+	font-size: $zzStatisticHugeLabelFontSize;
+}
+
+.giant.zz-statistic>.value {
+	font-size: $zzStatisticGiantValueFontSize;
+}
+
+.giant.zz-statistic>.label {
+	font-size: $zzStatisticGiantLabelFontSize;
+}
+
+.immense.zz-statistic>.value {
+	font-size: $zzStatisticImmenseValueFontSize;
+}
+
+.immense.zz-statistic>.label {
+	font-size: $zzStatisticImmenseLabelFontSize;
+}
